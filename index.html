@@ -89,7 +89,7 @@
                 the app. The integrated testing features allow for a streamlined
                 .
               </p>
-              <button class="btn px-14 bg-[#1DD100] border-none">
+              <button id="bus-ticket-btn" onclick="scrollToSpecificSection()" class="btn px-14 bg-[#1DD100] border-none">
                 Bus Ticket
               </button>
             </div>
@@ -139,7 +139,8 @@
               <div
                 class="bg-[#F78C9C] rounded-l-xl pt-20 pl-14 flex-col space-y-2 w-3/4"
               >
-                <h1 class="text-5xl raleway-bold">15% OFF</h1>
+                <h1 class="text-5xl raleway-bold">20% OFF
+                </h1>
                 <h3 class="text-3xl raleway-bold">on your next purchase</h3>
                 <p class="text-3xl raleway-bold text-gray-600">
                   Use by January 2024
@@ -154,9 +155,10 @@
                 />
               </div>
               <div
-                class="bg-[#F78C9C] w-1/3 rounded-r-xl flex flex-col pr-5 justify-center items-center"
+                class="bg-[#F78C9C] w-1/3 rounded-r-xl flex flex-col  justify-center items-center"
               >
-                <h1 class="text-5xl raleway-extrabold">NEW15</h1>
+                <h1 class="text-3xl raleway-extrabold">Couple 20
+                </h1>
                 <h2 class="raleway-medium text-2xl text-[#03071266]">
                   Coupon Code
                 </h2>
@@ -167,13 +169,13 @@
       </section>
       <!-- offer section Ends -->
       <!-- paribahan section starts -->
-      <section class=" my-16">
+      <section id="bus-ticket" class=" my-16">
            <div class="text-center space-y-3 mb-10 border-b-0 border-green-500 border-[2px] rounded-t-full border-x-0 bg-[#F7F8F8]">
             <h1 class=" text-5xl raleway-bold mt-12">P.H Paribahan</h1>
             <p class="w-2/5 text-center text-[#03071299] mx-auto text-lg raleway-normal">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
            </div>
            <!-- bus seat and fair container starts -->
-             <div class="flex container mx-auto ">
+             <div id="parent-sec" class="flex container mx-auto ">
               <div class=" border border-grey-200 w-[60%] rounded-l bg-[#FFFFFF]">
                 
                 <div class="px-5 py-7 bg-[#FFFFFF]">
@@ -189,7 +191,7 @@
                      <div>
                       <button class="flex bg-[#1DD10026] px-3 py-3">
                         <img src="./images/bus-icon.png" alt="">
-                        <span class="text-[#1DD100]">40 Seats left</span>
+                        <span class="text-[#1DD100]"><span id="left-seat">28</span> Seats left</span>
                       </button>
                      </div>
                   </div>
@@ -251,40 +253,40 @@
              <div class="flex my-5 gap-5">
               <div class="grid grid-cols-5  gap-7">
                 <div class="flex items-center">A</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">A-1</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">A-2</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ml-6">A-3</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">A-4</div>
-                <div class="flex items-center">B</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">B-1</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">B-2</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ml-6">B-3</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">B-4</div>
-                <div class="flex items-center">C</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">C-1</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">C-2</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ml-6">C-3</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">C-4</div>
-                <div class="flex items-center">D</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">D-1</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">D-2</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ml-6 ">D-3</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">D-4</div>
-                <div class="flex items-center">E</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">E-1</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">E-2</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ml-6">E-3</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">E-4</div>
-                <div class="flex items-center">F</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">F-1</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">F-2</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ml-6">F-3</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">F-4</div>
-                <div class="flex items-center">G</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">G-1</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">G-2</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ml-6">G-3</div>
-                <div class="bg-[#F7F8F8] px-6 py-3 ">G-4</div>
+                <div onclick="" id="A1" class="bg-[#F7F8F8] px-6 py-3 seat btn ">A1</div>
+                <div id="A2" class="bg-[#F7F8F8] px-6 py-3 seat btn">A2</div>
+                <div id="A3" class="bg-[#F7F8F8] px-6 py-3 ml-6 seat btn">A3</div>
+                <div id="A4" class="bg-[#F7F8F8] px-6 py-3 seat btn">A4</div>
+                <div id="B" class="flex items-center">B</div>
+                <div id="B1" class="bg-[#F7F8F8] px-6 py-3 seat btn">B1</div>
+                <div id="B2" class="bg-[#F7F8F8] px-6 py-3 seat btn">B2</div>
+                <div id="B3" class="bg-[#F7F8F8] px-6 py-3 ml-6 seat btn">B3</div>
+                <div id="B4" class="bg-[#F7F8F8] px-6 py-3 seat btn">B4</div>
+                <div id="C" class="flex items-center">C</div>
+                <div id="C1" class="bg-[#F7F8F8] px-6 py-3 seat btn">C1</div>
+                <div id="C2" class="bg-[#F7F8F8] px-6 py-3 seat btn">C2</div>
+                <div id="C3" class="bg-[#F7F8F8] px-6 py-3 ml-6 seat btn">C3</div>
+                <div id="C4" class="bg-[#F7F8F8] px-6 py-3 seat btn">C4</div>
+                <div id="D" class="flex items-center">D</div>
+                <div id="D1" class="bg-[#F7F8F8] px-6 py-3 seat btn">D1</div>
+                <div id="D2" class="bg-[#F7F8F8] px-6 py-3 seat btn">D2</div>
+                <div id="D3" class="bg-[#F7F8F8] px-6 py-3 ml-6 seat btn">D3</div>
+                <div id="D4" class="bg-[#F7F8F8] px-6 py-3 seat btn">D4</div>
+                <div id="E" class="flex items-center">E</div>
+                <div id="E1" class="bg-[#F7F8F8] px-6 py-3 seat btn">E1</div>
+                <div id="E2" class="bg-[#F7F8F8] px-6 py-3 seat btn">E2</div>
+                <div id="E3" class="bg-[#F7F8F8] px-6 py-3 ml-6 seat btn">E3</div>
+                <div id="E4" class="bg-[#F7F8F8] px-6 py-3 seat btn">E4</div>
+                <div id="F" class="flex items-center">F</div>
+                <div id="F1" class="bg-[#F7F8F8] px-6 py-3 seat btn">F1</div>
+                <div id="F2" class="bg-[#F7F8F8] px-6 py-3 seat btn">F2</div>
+                <div id="F3" class="bg-[#F7F8F8] px-6 py-3 ml-6 seat btn">F3</div>
+                <div id="F4" class="bg-[#F7F8F8] px-6 py-3 seat btn">F4</div>
+                <div id="G" class="flex items-center">G</div>
+                <div id="G1" class="bg-[#F7F8F8] px-6 py-3 seat btn">G1</div>
+                <div id="G2" class="bg-[#F7F8F8] px-6 py-3 seat btn">G2</div>
+                <div id="G3" class="bg-[#F7F8F8] px-6 py-3 ml-6 seat btn">G3</div>
+                <div id="G4" class="bg-[#F7F8F8] px-6 py-3 seat btn">G4</div>
 
 
               </div>
@@ -300,7 +302,7 @@
                 <div class="flex  justify-between px-3">
                   <div class="indicator">
                     <p class="text-xl px-4">Seat</p>
-                    <span class="indicator-item badge bg-[#1DD100] text-white raleway-semibold">99+</span> 
+                    <span id="selected-seat-no" class="indicator-item badge bg-[#1DD100] text-white raleway-semibold">0</span> 
                   </div>
                   <p class="">Class</p>
                   <p class="">Price</p>
@@ -311,8 +313,8 @@
                 <p><span>BDT</span><span>0</span></p>
                </div>
                <div class="border  border-grey-50 w-2/3 mx-auto flex justify-between py-2 rounded-lg mt-5 bg-white">
-                 <input class="w-2/3" type="text" name="" id="" placeholder="Have Any Coupon">
-                 <button class="btn bg-[#1DD100] text-white raleway-semibold">Apply Now</button>
+                 <input class="w-2/3" type="text" name="" id="coupon-input" placeholder="Have Any Coupon">
+                 <button id="btn-apply" class="btn bg-[#1DD100] text-white raleway-semibold" disabled>Apply Now</button>
                </div>
                <div class="flex justify-between px-3 mt-5">
                 <p class="raleway-bold text-xl"> Grand Total</p>
@@ -329,14 +331,32 @@
               </div>
               <div class="my-4">
                 <label class="raleway-bold text-2xl" for="">Phone Number*</label>
-                <input class="block py-3 w-full mt-5 border-[1px] border-grey-100 px-3 rounded-md" type="text" name="" id="" placeholder="Enter Your Phone Number">
+                <input onclick="" class="block py-3 w-full mt-5 border-[1px] border-grey-100 px-3 rounded-md" type="number" name="" id="number-input" placeholder="Enter Your Phone Number">
               </div>
               <div class="my-4">
                 <label class="raleway-bold text-2xl" for="">Email Id*</label>
                 <input class="block py-3 w-full mt-5 border-[1px] border-grey-100 px-3 rounded-md" type="text" name="" id="" placeholder="Enter Your Email Id">
               </div>
               <div>
-                <button class="btn w-full bg-[#1DD100]">Next</button>
+                <div>
+                  <button id="next"onclick="my_modal_1.showModal()"  class="btn w-full bg-[#1DD100]" disabled>Next</button>
+                  <dialog id="my_modal_1" class="modal">
+                    <div class="modal-box text-center">
+                      <div class="flex justify-center">
+                        <img src="./images/success.png" alt="" srcset="">
+                      </div>
+                      <p class="text-[#1DD100] text-2xl">Success</p>
+                      <p class="py-4 w-2/3 mx-auto text-center raleway-medium text-lg text-[#4A4A4A]">Thanks For Booking On Bus We are trying to No one bus Service in the Whole World </p>
+                      <p class="py-2 w-2/3 mx-auto text-center raleway-bold text-sm text-[#1DD100]">Shortly We will Notify You by Mail,Thanks </p>
+                      <div class="modal-action flex justify-center w-full">
+                        <form method="dialog  ">
+                          <!-- if there is a button in form, it will close the modal -->
+                          <button class="btn text-center bg-[#1DD100] px-20">Continue</button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>
+                </div>
                 <div class="flex justify-around mt-4">
                   <p class="underline raleway-normal text-lg">Terms and Condition Apply</p>
                   <p class="underline raleway-normal text-lg">Cancellation Policy</p>
@@ -352,6 +372,7 @@
       <!-- paribahan section ends -->
     </main>
     <!-- script -->
+    <script src="./script/utility.js"></script>
     <script src="./script/ticket.js"></script>
   </body>
 </html>

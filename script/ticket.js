@@ -16,6 +16,11 @@ var buttons = document.getElementsByClassName("seat");
  let counter=0;
  for(const button of buttons) {
     button.addEventListener("click", function(event) {
+        const value=event.target.parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[5].childNodes[3].childNodes[3].value;
+        // validation
+        if(value>0){
+            nextButton.removeAttribute('disabled');
+        }
         counter=counter+1;
         // item Summary
         const perTicketPrice=getElementValueById('ticket-price');

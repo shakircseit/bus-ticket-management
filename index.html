@@ -222,15 +222,15 @@
               <div class="bg-[#FFFFFF] border border-grey-200 w-[40%] flex justify-center items-center flex-col space-y-3">
                 <img src="./images/fare.png" alt="">
                 <p class="text-3xl raleway-bold">
-                  550 Taka
+                  <span id="ticket-price">550</span> Taka
                 </p>
                 <p class="text-[#03071299] text-2xl raleway-semibold">Per Seat</p>
               </div>
              </div>
            <!-- bus seat and fair container ends -->
            <!-- seat Plan Container Starts -->
-           <div class="container border-2 flex border-red-500 mx-auto min-h-96 mt-10 bg-[#FFFFFF]  rounded-xl">
-           <div class="min-h-96 w-full p-3 border-2 border-green-500">
+           <div class="container  flex  mx-auto min-h-96 mt-10 bg-[#FFFFFF]  rounded-xl">
+           <div class="min-h-96 w-full p-3 border-grey-100 border-[1px]">
             <h1 class="raleway-semibold text-xl">Seat Your Plan</h1>
             <hr class=" my-1 border-dashed">
             <div class="flex justify-between my-2">
@@ -288,7 +288,6 @@
                 <div id="G3" class="bg-[#F7F8F8] px-6 py-3 ml-6 seat btn">G3</div>
                 <div id="G4" class="bg-[#F7F8F8] px-6 py-3 seat btn">G4</div>
 
-
               </div>
              </div>
             <!-- section Seat Ends -->
@@ -301,24 +300,32 @@
               <div class="">
                 <div class="flex  justify-between px-3">
                   <div class="indicator">
-                    <p class="text-xl px-4">Seat</p>
+                    <p class="text-xl raleway-semibold">Seat</p>
                     <span id="selected-seat-no" class="indicator-item badge bg-[#1DD100] text-white raleway-semibold">0</span> 
                   </div>
-                  <p class="">Class</p>
-                  <p class="">Price</p>
+                  <p class="raleway-semibold">Class</p>
+                  <p class="raleway-semibold">Price</p>
                 </div>
-                 <hr class="border-[1px] border-black">
+                <div class="item-summary">
+                  <ol id="item-summary-container">
+
+                  </ol>
+                </div>
+                 <hr class="border-[1px] border-slate-200">
                <div class="flex justify-between px-3">
-                <p>Total Price</p>
-                <p><span>BDT</span><span>0</span></p>
+                <p class="raleway-semibold">Total Price</p>
+                <p><span class="raleway-semibold">BDT &nbsp</span><span id="total-price" class="text-[#1DD100] raleway-semibold text-2xl">0</span></p>
                </div>
+               <!-- discount container starts -->
+                <ul id="discount-price" class="hidden"></ul>
+               <!-- discount container ends -->
                <div class="border  border-grey-50 w-2/3 mx-auto flex justify-between py-2 rounded-lg mt-5 bg-white">
                  <input class="w-2/3" type="text" name="" id="coupon-input" placeholder="Have Any Coupon">
                  <button id="btn-apply" class="btn bg-[#1DD100] text-white raleway-semibold" disabled>Apply Now</button>
                </div>
                <div class="flex justify-between px-3 mt-5">
                 <p class="raleway-bold text-xl"> Grand Total</p>
-                <p><span>BDT</span><span>0</span></p>
+                <p><span class="raleway-semibold">BDT &nbsp</span><span id="grand-total" class="text-[#1DD100] raleway-semibold text-2xl">0</span></p>
                </div>
                </div>
             </div>

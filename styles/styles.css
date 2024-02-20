@@ -30,3 +30,12 @@
   font-weight: 500;
   font-style: normal;
 }
+
+li {
+  display: flex;
+  padding-left: 12px;
+  padding-right: 12px;
+  gap: 3px 200px;
+  justify-content: space-between;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

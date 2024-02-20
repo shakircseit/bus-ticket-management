@@ -1,11 +1,27 @@
 function CouponActive(inputValue,buttonId){
     const button=document.getElementById(buttonId);
-    if(inputValue==='NEW15' ||inputValue==='Couple 20'){
+    if(inputValue===4){
         button.removeAttribute('disabled')
     }
     else{
         button.setAttribute('disabled',true)
     }
+}
+let discount;
+function discountedPrice(inputValue,total){
+   
+ if(inputValue==='NEW15'){
+    discount=total*15/100;
+    return discount;
+ }
+ else if(inputValue==='Couple 20'){
+    discount=total*20/100;
+    return discount;
+ }
+ else{
+     return alert('Enter Wrong Code');
+      
+ }
 }
 
 function remainingSeat(){
